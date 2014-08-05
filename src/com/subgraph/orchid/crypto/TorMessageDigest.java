@@ -52,7 +52,8 @@ public class TorMessageDigest {
 
 	/**
 	 * Return the digest value of all data processed up until this point.
-	 * @return The digest value as an array of <code>TOR_DIGEST_SIZE<code> or <code>TOR_DIGEST256_SIZE</code> bytes.
+	 * @return The digest value as an array of <code>TOR_DIGEST_SIZE</code>
+	 * or <code>TOR_DIGEST256_SIZE</code> bytes.
 	 */
 	public byte[] getDigestBytes() {
 		try {
@@ -100,7 +101,7 @@ public class TorMessageDigest {
 	}
 
 	/**
-	 * Add <code>length</code> bytes of the contents of the byte array <code>input</code> beginning at 
+	 * Add <code>length</code> bytes of the contents of the byte array <code>input</code> beginning at
 	 * <code>offset</code> into the array to the current digest calculation.
 	 * 
 	 * @param input An array of input bytes to process.
